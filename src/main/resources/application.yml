@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    host: 47.244.18.29
+    port: 5672
+    username: ocean
+    password: huhaiyang
+    virtual-host: /test
+    connection-timeout: 2000ms
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 1
+        max-concurrency: 5
